@@ -1,21 +1,4 @@
 
-/*-----------------------CONTENT-GENERAL STYLES-----------------*/
-article h2{
-    font-family: 'Chilanka', cursive;
-    text-align:center;
-    font-size:2rem;
-    color:#133568;
-}
-@media (min-width:426px){
-    article h2{
-        margin:5% auto;
-        font-size:3.125rem;
-    }
-    .content-center{
-        max-width:1000px;
-        margin:0px auto;
-    }
-}
 /*---------------------DISCLAIMER------------------------------------*/
 .disclaimer{
     padding: 0 20px 0px 20px;
