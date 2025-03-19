@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/bmi-calculator.css">
+    <link rel="shortcut icon" href="img/icon.png">
+</head>
+<body>
+    <nav>
+        <img src="img/logo.png" alt="BeFit Logo">
+        <ul class="desktop-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About the project</a></li>
+            <li><a href="bmi-calculator.html">BMI calculator</a></li>
+        </ul>
+        <button class="subscribe">Subscribe</button>
+        <div class="overlay">
+            <div class="subscribeField">
+                <p>Get an extra bonus from us and be the first who'll know about our start!</p>
+                <form action="https://formspree.io/wonka.superme@gmail.com" method="POST" enctype="text/plain" >
+                    <label for="nameSub"> Your name
+                        <input type="text" name="nameSub" id="nameSub" required>        
+                    </label>    
+                    <label for="mailSub"> Your email
+                        <input type="email" name="mailSub" id="mailSub" required>
+                    </label>
+                    <button type="submit">Subscribe now</button>
+                    <button type="button" class="closeSubscribe">Back</button>
+                </form>
+            </div> 
+        </div>
+        <div class="burger-menu">
+            <input id="burger" type="checkbox" />
+            <label for="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="navigation">    
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="bmi-calculator.html">BMI calculator</a></li>
+                </ul>  
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1>Body Mass Index Calculator</h1>
+    </header>
+    <main>
+        <article class="aboutCalculator">
+            <img src="img/bmi-img.png" alt="Beautiful pic of the Earth and food">
+            <section class="text">
+                <p>Body Mass Index (BMI) is a measurement of a person’s weight with respect to his or her height. It is more of an indicator than a direct measurement of a person’s total body fat.</p>
+                <p>Calculate your body mass index, so we could help you with your nutrition</p>
+                <p>Just enter your height and weight. We'll calculate it for you</p>
+                <p id="pic-copyright">* Vector created by <a href="https://www.freepik.com/free-photos-vectors/background">freepik</a></p>
+            </section>  
+        </article>
+        <article class="calculator">
+            <form action="" method="POST">
+                <label for="weight">Enter your weight
+                    <input type="number" required placeholder=" in kg" id="weight">
+                </label>
+                <label for="height"> Enter your height
+                    <input type="number" required placeholder=" in cm" id="height">
+                </label>
+                <button type="button" id="submitBMI">Discover BMI!</button>
+            </form>
+            <p id="showResult">Click and wait for it!</p>
+        </article>
+    </main>
+    <footer>
+        <section class="thanks-ftr">
+            <p>Special thanks to</p>
+            <p><a href="http://slabdsgn.com/"> SLAB! Design Studio</a> for freebie</p>
+            <p><a href="https://www.freepik.com/free-photos-vectors/people">Freepik</a> for illustrations</p>    
+        </section>
+        <section class="about-ftr">
+            <p>About</p>
+            <ul>   
+                <li><a href="about.html">Project</a></li>
+                <li><a href="about.html#author">Author</a></li>
+                <li><a href="about.html#mission">Mission</a></li>
+            </ul> 
+        </section>
+        <section class="foryou-ftr">
+            <p>For you</p>
+            <ul>
+                <li><a href="bmi-calculator.html">BMI Calculator</a></li>
+                <li><a href="under-development.html">Useful Links</a></li>
+                <li><a href="under-development.html">Useful Videos</a></li>
+            </ul>
+            </section>
+            <p class="copyright">Copyright © 2019 BerYoga All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/calculateBMI.js"></script>
+</body>
+</html>
