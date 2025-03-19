@@ -1,19 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
-:root{
-    font-family: 'Manjari', sans-serif;
-}
-body{  
-   background-image:url(../img/background-small.jpg); 
-    background-size:cover;
-    background-attachment:fixed;
-    margin:0px;
-    padding:0px;
-}
-@media(min-width:426px){
-  body{
-    background-image:url(../img/background.jpg); 
-  }
-}
+
 /*-----------------------CONTENT-GENERAL STYLES-----------------*/
 article h2{
     font-family: 'Chilanka', cursive;
@@ -31,11 +16,32 @@ article h2{
         margin:0px auto;
     }
 }
-/*--------------------NAVIGATION---------------*/
-.wrapper{
-    background:url(../img/header-small.png);
-    background-size:cover;
+/*---------------------DISCLAIMER------------------------------------*/
+.disclaimer{
+    padding: 0 20px 0px 20px;
+    background-color: #404040;
+    position: fixed;
+    bottom:0;
+    left:0;
+
+    z-index: 15;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
 }
+.disclaimer p{
+    color:#ff6666;
+    text-transform: uppercase;
+}
+@media(min-width:426px){
+    .disclaimer{
+        flex-direction: row;
+    }
+  }
+/*--------------------NAVIGATION---------------*/
+
 nav ul.desktop-nav, nav button.subscribe{
     display:none;
 }
@@ -153,11 +159,6 @@ input:checked ~ .navigation ul li{
             transition-delay: .5s;
 }
 @media (min-width:426px){
-    .wrapper{
-        height:100vh;
-        background:url(../img/header.png);
-        background-size:cover;
-    }
     .burger-menu{
         display:none;
     }

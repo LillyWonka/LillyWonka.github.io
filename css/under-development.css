@@ -1,19 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
-:root{
-    font-family: 'Manjari', sans-serif;
-}
-body{  
-    background-image:url(../img/background-small.jpg); 
-    background-size: cover;
-    background-attachment: fixed; 
-    padding:0px;
-    margin:0px;
-}
-@media(min-width:426px){
-    body{
-      background-image:url(../img/background.jpg); 
-    }
-  }
+
 /*---------------------MAIN SECTION------------------------*/
 section.underConstruction h1{
     font-family: 'Chilanka', cursive;

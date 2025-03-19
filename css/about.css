@@ -1,19 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Chilanka|Manjari&display=swap');
-:root{
-    font-family: 'Manjari', sans-serif;
-}
-body{  
-    background-image:url(../img/background-small.jpg); 
-    background-size: cover;
-    background-attachment: fixed; 
-    margin:0px;
-    padding:0px;
-}
-@media(min-width:426px){
-    body{
-      background-image:url(../img/background.jpg); 
-    }
-  }
+
 /*-----------------------MAIN STYLES--------------------------*/
 h2{
     font-family:'Chilanka', cursive;
@@ -40,6 +25,7 @@ article a{
         margin:0px auto;
     }
   }
+  
 /*--------------------NAVIGATION---------------*/
 nav ul.desktop-nav, nav button{
     display:none;
